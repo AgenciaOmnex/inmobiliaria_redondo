@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar — Asesores Inmobiliarios Redondo</title>
+  <meta name="description" content="Encuentra tu próxima vivienda en Moguer y Huelva. Pisos, chalets, cortijos y más. Asesores Inmobiliarios Redondo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="page-body">
+
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="./index.html" class="logo" aria-label="Asesores Inmobiliarios Redondo — Inicio">
+          <div class="logo-mark">
+            <svg class="logo-house" width="28" height="30" viewBox="0 0 28 30" aria-hidden="true"><polygon points="14,1 27,12 27,29 1,29 1,12"/></svg>
+            <svg class="logo-circle-svg" width="23" height="23" viewBox="0 0 23 23" aria-hidden="true"><circle cx="11.5" cy="11.5" r="11.5"/></svg>
+          </div>
+          <div class="logo-text">
+            <span class="eyebrow">Asesores inmobiliarios</span>
+            <span class="brand">Redondo</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="./index.html"    class="nav-link">Inicio</a>
+          <a href="./comprar.html"  class="nav-link">Comprar</a>
+          <a href="./alquiler.html" class="nav-link">Alquilar</a>
+          <a href="./vender.html"   class="nav-link">Vender</a>
+          <a href="./nosotros.html" class="nav-link">Nosotros</a>
+          <a href="./contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-selector" role="group" aria-label="Idioma">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+          </div>
+          <a href="./contacto.html" class="btn btn-primary btn-sm">Contactar</a>
+          <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Menú móvil">
+    <a href="./index.html"    class="nav-link">Inicio</a>
+    <a href="./comprar.html"  class="nav-link">Comprar</a>
+    <a href="./alquiler.html" class="nav-link">Alquilar</a>
+    <a href="./vender.html"   class="nav-link">Vender</a>
+    <a href="./nosotros.html" class="nav-link">Nosotros</a>
+    <a href="./contacto.html" class="nav-link">Contacto</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="ar">AR</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Propiedades en venta">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="./index.html">Inicio</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Comprar</span>
+        </nav>
+        <h1 class="page-hero-title">Propiedades en venta</h1>
+        <p class="page-hero-subtitle">Encuentra tu próxima vivienda en Huelva</p>
+      </div>
+    </section>
+
+    <!-- Listings -->
+    <section class="section-sm">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="filters-bar" role="search" aria-label="Filtros de búsqueda">
+          <div class="filter-group">
+            <label class="filter-label" for="f-localidad">Localidad</label>
+            <select class="filter-control" id="f-localidad">
+              <option value="">Todas</option>
+              <option value="moguer">Moguer</option>
+              <option value="huelva">Huelva capital</option>
+              <option value="mazagon">Mazagón</option>
+              <option value="almonte">Almonte</option>
+              <option value="punta-umbria">Punta Umbría</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="f-tipo">Tipo</label>
+            <select class="filter-control" id="f-tipo">
+              <option value="">Todos</option>
+              <option value="piso">Piso / Apartamento</option>
+              <option value="chalet">Chalet / Unifamiliar</option>
+              <option value="cortijo">Cortijo / Finca</option>
+              <option value="local">Local comercial</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="f-precio">Precio máx.</label>
+            <select class="filter-control" id="f-precio">
+              <option value="">Sin límite</option>
+              <option value="100000">Hasta 100.000 €</option>
+              <option value="200000">Hasta 200.000 €</option>
+              <option value="350000">Hasta 350.000 €</option>
+              <option value="500000">Hasta 500.000 €</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="f-habs">Habitaciones</label>
+            <select class="filter-control" id="f-habs">
+              <option value="">Cualquiera</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" onclick="filterProperties()" style="align-self:flex-end;white-space:nowrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Filtrar
+          </button>
+        </div>
+
+        <!-- Results meta -->
+        <div class="results-meta">
+          <p class="results-count"><strong id="results-count">4</strong> propiedades encontradas</p>
+          <div class="sort-control">
+            <label for="sort-select">Ordenar:</label>
+            <select id="sort-select">
+              <option>Más recientes</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+              <option>Mayor superficie</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="property-grid" id="comprar-grid" aria-label="Propiedades en venta"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <div class="logo-mark">
+              <svg class="logo-house" width="28" height="30" viewBox="0 0 28 30" aria-hidden="true"><polygon points="14,1 27,12 27,29 1,29 1,12"/></svg>
+              <svg class="logo-circle-svg" width="23" height="23" viewBox="0 0 23 23" aria-hidden="true"><circle cx="11.5" cy="11.5" r="11.5"/></svg>
+            </div>
+            <div class="logo-text">
+              <span class="eyebrow">Asesores inmobiliarios</span>
+              <span class="brand">Redondo</span>
+            </div>
+          </a>
+          <p class="footer-desc">En Moguer se van a abrir muchas puertas. Tu inmobiliaria de confianza en Huelva.</p>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Avda. de la Constitución 3, Local C, 21800 Moguer</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.18C1.62 2.08 2.46 1.17 3.56 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.72 16z"/></svg>
+              <span>+34 959 28 11 00</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Comprar</h3>
+          <ul class="footer-links">
+            <li><a href="./comprar.html" class="footer-link">Pisos y apartamentos</a></li>
+            <li><a href="./comprar.html" class="footer-link">Chalets y unifamiliares</a></li>
+            <li><a href="./comprar.html" class="footer-link">Cortijos y fincas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Servicios</h3>
+          <ul class="footer-links">
+            <li><a href="./alquiler.html" class="footer-link">Alquiler</a></li>
+            <li><a href="./vender.html"   class="footer-link">Vender mi casa</a></li>
+            <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Empresa</h3>
+          <ul class="footer-links">
+            <li><a href="./nosotros.html" class="footer-link">Quiénes somos</a></li>
+            <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Asesores Inmobiliarios Redondo. Todos los derechos reservados.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#">Aviso legal</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/properties.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    var allVenta = [];
+
+    document.addEventListener('DOMContentLoaded', function () {
+      allVenta = window.Properties.getVenta();
+      renderCurrent(allVenta);
+    });
+
+    function renderCurrent(props) {
+      var grid = document.getElementById('comprar-grid');
+      document.getElementById('results-count').textContent = props.length;
+      window.Properties.renderGrid(grid, props, './');
+    }
+
+    function filterProperties() {
+      var localidad = document.getElementById('f-localidad').value.toLowerCase();
+      var tipo      = document.getElementById('f-tipo').value.toLowerCase();
+      var precioMax = parseInt(document.getElementById('f-precio').value, 10) || Infinity;
+      var minHabs   = parseInt(document.getElementById('f-habs').value, 10) || 0;
+
+      var filtered = allVenta.filter(function (p) {
+        return (!localidad || p.localidad.toLowerCase().includes(localidad)) &&
+               (!tipo      || p.categoria === tipo) &&
+               (p.precio <= precioMax) &&
+               (p.habitaciones >= minHabs);
+      });
+      renderCurrent(filtered);
+    }
+  </script>
+</body>
+</html>
